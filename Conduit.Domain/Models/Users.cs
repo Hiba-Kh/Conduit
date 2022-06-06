@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Conduit.Domain.Repositories;
 using Microsoft.AspNetCore.Identity;
 
 namespace Conduit.Domain.Models
 {
-    public class Users : IdentityUser
+    public class Users : IdentityUser, IDomainModel
     {
         public Profiles Profile { get; set; }
         public List<Articles> Articles { get; set; }

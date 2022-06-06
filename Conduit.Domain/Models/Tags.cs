@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Conduit.Domain.Repositories;
 
 namespace Conduit.Domain.Models
 {
-    public class Tags
+    public class Tags : IDomainModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

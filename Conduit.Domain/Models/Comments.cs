@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Conduit.Domain.Repositories;
 
 namespace Conduit.Domain.Models
 {
-    public class Comments
+    public class Comments : IDomainModel
     {
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }
